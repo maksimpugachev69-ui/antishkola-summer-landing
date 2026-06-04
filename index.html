@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Антишкола — летние программы для детей 4–16: английский в играх, ИИ-лагерь, билингвальная школа</title>
+<meta name="description" content="Лето, после которого ребёнок заговорил и создал свой проект. Английский и испанский в любимых играх, онлайн-лагерь по ИИ, школа на уровень носителя. Бесплатный урок.">
+<meta property="og:title" content="Антишкола — лето, после которого ребёнок заговорил, создал и вырвался вперёд">
+<meta property="og:description" content="Английский и испанский в любимых играх, онлайн-лагерь по ИИ, билингвальная школа. Бесплатный урок, промокод POLINA −10%.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/hero-kids.jpg">
+<meta name="theme-color" content="#0a0f12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="locked">
+
+<!-- Preloader -->
+<div id="preloader">
+  <img class="pl-logo" src="assets/brand/logo-light.svg" alt="Антишкола">
+  <div class="pl-bar"><i></i></div>
+</div>
+
+<div class="cursor-glow" id="cursor"></div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Антишкола"><img src="assets/brand/logo-dark.svg" alt="Антишкола"></a>
+    <nav class="nav">
+      <a href="#doors">Программы</a>
+      <a href="#how">Как это работает</a>
+      <a href="#trust">Почему нам верят</a>
+      <a href="#faq">Вопросы</a>
+      <a class="btn btn-primary nav-cta" href="#final" data-magnetic>Бесплатный урок</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mnav" id="mnav">
+  <a href="#doors">Программы</a>
+  <a href="#how">Как это работает</a>
+  <a href="#trust">Почему нам верят</a>
+  <a href="#faq">Вопросы</a>
+  <a href="#final">Бесплатный урок</a>
+</nav>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <figure class="hero-photo"><img src="assets/img/hero-kids.jpg" alt="Счастливые дети учатся онлайн в Антишколе" fetchpriority="high"></figure>
+  <div class="wrap">
+    <div class="hero-eyebrow">
+      <span class="chip live">Лето 2026</span>
+      <span class="chip">Онлайн</span>
+      <span class="chip">Дети 4–16</span>
+    </div>
+    <h1 aria-label="Лето, которое прокачает ребёнка">
+      <span class="ln"><span data-w>Лето, которое</span></span>
+      <span class="ln"><span data-w class="accent">прокачает</span></span>
+      <span class="ln"><span data-w>ребёнка.</span></span>
+    </h1>
+    <p class="hero-promise">Английский в любимых играх, лагерь по ИИ и языки до уровня носителя. <b>Для детей 4–16.</b></p>
+    <p class="hero-sub">Антишкола берёт то, из-за чего вы ругаетесь — игры, нейросети, экран — и превращает в навык на всю жизнь.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary btn-lg" href="#final" data-magnetic>Записать на бесплатный урок <span class="arr">→</span></a>
+      <a class="btn btn-ghost btn-lg" href="#doors" data-magnetic>Подобрать программу</a>
+    </div>
+    <p class="hero-micro"><b>Бесплатно. Без карты.</b> Сначала поймём задачу — потом предложим маршрут.</p>
+    <div class="hero-trust">
+      <span><i>✦</i> Носители с 1-го урока</span>
+      <span><i>✦</i> Под присмотром педагога</span>
+      <span><i>✦</i> Гарантия первого урока</span>
+      <span><i>✦</i> 6+ языков</span>
+    </div>
+  </div>
+</section>
+
+<!-- Partner marquee -->
+<div class="marquee">
+  <div class="track">
+    <span class="mq-label">Нам доверяют команды из</span>
+    <img src="assets/brand/partners/hse.svg" alt="HSE"><img src="assets/brand/partners/lego.svg" alt="LEGO">
+    <img src="assets/brand/partners/coursera.svg" alt="Coursera"><img src="assets/brand/partners/skillbox.svg" alt="Skillbox">
+    <img src="assets/brand/partners/heineken.svg" alt="Heineken"><img src="assets/brand/partners/bacardi.svg" alt="Bacardi">
+    <span class="mq-label">Нам доверяют команды из</span>
+    <img src="assets/brand/partners/hse.svg" alt="HSE"><img src="assets/brand/partners/lego.svg" alt="LEGO">
+    <img src="assets/brand/partners/coursera.svg" alt="Coursera"><img src="assets/brand/partners/skillbox.svg" alt="Skillbox">
+    <img src="assets/brand/partners/heineken.svg" alt="Heineken"><img src="assets/brand/partners/bacardi.svg" alt="Bacardi">
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="section dark problem">
+  <div class="wrap">
+    <div class="section-tag reveal"><span class="eyebrow">Знакомое лето?</span></div>
+    <h2 class="reveal" data-split>Каждое лето <span class="accent">одно и то же</span></h2>
+    <div class="pain-grid">
+      <div class="pain reveal"><span class="num">Боль 01</span><h3>«Опять весь день в Roblox»</h3><p>Экран не отобрать, а толку — ноль. Доходит до криков и обид.</p></div>
+      <div class="pain reveal"><span class="num">Боль 02</span><h3>«Лето утекает в ютуб»</h3><p>Три месяца, которые ребёнок просто провегетирует в ленте.</p></div>
+      <div class="pain reveal"><span class="num">Боль 03</span><h3>«Запишу на курс — бросит»</h3><p>Через неделю станет скучно, как в школе. Знакомый сценарий.</p></div>
+    </div>
+    <p class="bridge reveal">Проблема не в экране. Проблема в том, что экран <b>ничего не отдаёт взамен.</b> Это чинится.</p>
+  </div>
+</section>
+
+<!-- BIG IDEA -->
+<section class="section light idea">
+  <div class="wrap">
+    <div class="section-tag reveal"><span class="eyebrow">Большая идея</span></div>
+    <h2 class="reveal" data-split>Это Антишкола. Здесь нет уроков, которые <span class="accent">хочется прогулять</span></h2>
+    <p class="lead reveal">Мы не отбираем у ребёнка то, что он любит. Мы заходим туда вместе с ним — в игру, в нейросети, в язык — и превращаем интерес в результат. Один бесплатный урок → персональный маршрут под возраст и задачу → лето, которое видно в сентябре.</p>
+    <div class="principles">
+      <div class="principle reveal"><span class="num">01</span><p>Начинаем с ребёнка, а не с учебника.</p></div>
+      <div class="principle reveal"><span class="num">02</span><p>Носитель и живой педагог — с первой минуты.</p></div>
+      <div class="principle reveal"><span class="num">03</span><p>Родитель видит прогресс, а не верит на слово.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DOORS (pinned) -->
+<section class="section dark doors" id="doors">
+  <div class="wrap">
+    <div class="doors-head">
+      <div>
+        <div class="section-tag reveal"><span class="eyebrow">Три двери в развитие</span></div>
+        <h2 class="reveal" data-split>Выберите по возрасту и <span class="accent">задаче ребёнка</span></h2>
+      </div>
+      <div class="doors-prog" id="doorsProg">
+        <button class="on" data-i="0">Играй</button>
+        <button data-i="1">Создавай</button>
+        <button data-i="2">Говори</button>
+      </div>
+    </div>
+  </div>
+  <div class="pin-wrap" id="pinWrap">
+    <div class="wrap">
+      <div class="door-track" id="doorTrack">
+
+        <!-- Door 1 -->
+        <article class="door" data-c="m">
+          <div class="door-card">
+            <div class="meta">
+              <div>
+                <div class="door-num">01 — Играй</div>
+                <div class="door-kicker">PlaySend</div>
+                <div class="tag">Английский и испанский — внутри любимой игры</div>
+                <h3>Пока другие отбирают Roblox — мы заходим в него вместе с носителем.</h3>
+                <p class="desc">Ребёнок открывает Minecraft, Roblox или Brawl Stars и играет вместе с тьютором-носителем. Принцип «Action-first»: сначала действие, потом слово. Язык связывается с реальным опытом в игре, а не с картинкой в учебнике.</p>
+                <ul class="bullets">
+                  <li>50 мин в игре</li><li>инд. или микро-группа до 3</li><li>отчёты родителю</li><li>безопасно, без токсичных серверов</li>
+                </ul>
+              </div>
+              <div class="foot">
+                <div class="price"><span>микро-группа от</span><b>5 500 ₽/мес</b><span>индивидуально от 10 100 ₽/мес</span></div>
+                <a class="btn btn-ghost" href="#final" data-magnetic>Пробный урок в игре →</a>
+              </div>
+            </div>
+            <div class="visual" data-fx="m">
+              <img src="assets/img/door-play.jpg" alt="Ребёнок играет с тьютором-носителем в видеоигре" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- Door 2 -->
+        <article class="door" data-c="y">
+          <div class="door-card">
+            <div class="meta">
+              <div>
+                <div class="door-num">02 — Создавай</div>
+                <div class="door-kicker">AI Kids Lab</div>
+                <div class="tag">Онлайн-лагерь по искусственному интеллекту</div>
+                <h3>Ваш ребёнок перестанет потреблять ИИ и начнёт им создавать.</h3>
+                <p class="desc">За 2 недели — от ленты TikTok к своим проектам: комиксы и мультфильмы, музыка и клипы, мини-игры и ИИ-аватары. Старшие разбирают ИИ-безопасность и сравнивают ChatGPT, Claude и DeepSeek.</p>
+                <div class="ages"><b>8–10 · творчество</b><b>11–13 · проекты</b><b>14–16 · ИИ-безопасность</b></div>
+                <ul class="bullets">
+                  <li>10 × 50 мин за 2 недели</li><li>мини-группа</li><li>портфолио + диплом</li><li>ИИ-ассистент 24/7</li>
+                </ul>
+              </div>
+              <div class="foot">
+                <div class="price"><span>Standard</span><b>$139 <small style="font-size:.7em;color:var(--yellow)">early bird $118</small></b><span>смены: 15–26 июня · 13–24 июля · 3–14 авг</span></div>
+                <a class="btn btn-ghost" href="#final" data-magnetic>Забронировать смену →</a>
+              </div>
+            </div>
+            <div class="visual" data-fx="y"><img src="assets/img/door-ai.jpg" alt="Ребёнок создаёт проект с искусственным интеллектом" loading="lazy"></div>
+          </div>
+        </article>
+
+        <!-- Door 3 -->
+        <article class="door" data-c="w">
+          <div class="door-card">
+            <div class="meta">
+              <div>
+                <div class="door-num">03 — Говори</div>
+                <div class="door-kicker">Bilingual School</div>
+                <div class="tag">Премиум онлайн-школа: английский и испанский</div>
+                <h3>Уровень носителя без акцента — и без стыда говорить.</h3>
+                <p class="desc">Сертифицированные ESL-педагоги (TEFL/TESOL, 5+ лет) и методика TPR: ребёнок не переводит в голове, а связывает слова с действием. Темы — вокруг увлечений: космос, LEGO, динозавры. Готовим к переезду в США, минуя затяжные ESL-классы.</p>
+                <ul class="bullets">
+                  <li>индивидуально, 30 мин</li><li>английский + испанский</li><li>инклюзия SEND</li><li>отчёты о прогрессе</li>
+                </ul>
+              </div>
+              <div class="foot">
+                <div class="price"><span>от</span><b>$9.90 / занятие</b><span>пакеты от $99/мес</span></div>
+                <a class="btn btn-ghost" href="#final" data-magnetic>Диагностический урок →</a>
+              </div>
+            </div>
+            <div class="visual" data-fx="w"><img src="assets/img/door-speak.jpg" alt="Ребёнок уверенно говорит на онлайн-уроке с носителем" loading="lazy"></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <p class="scroll-hint">Скролльте — три двери ↔</p>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="section light how" id="how">
+  <div class="wrap">
+    <div class="section-tag reveal"><span class="eyebrow">Как это работает</span></div>
+    <h2 class="reveal" data-split>От «опять в телефоне» до <span class="accent">«мама, я могу!»</span> — за три шага</h2>
+    <div class="steps">
+      <div class="step reveal"><div class="dot">1</div><h3>Бесплатный урок и диагностика</h3><p>Знакомимся, смотрим уровень и интересы ребёнка. Без карты, без обязательств.</p></div>
+      <div class="step reveal"><div class="dot">2</div><h3>Персональный маршрут</h3><p>Подбираем программу, педагога и темп под возраст и задачу.</p></div>
+      <div class="step reveal"><div class="dot">3</div><h3>Лето с результатом</h3><p>Ребёнок занимается тем, что любит — и выходит с навыком, проектом и горящими глазами.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="section dark trust" id="trust">
+  <div class="wrap">
+    <div class="section-tag reveal"><span class="eyebrow">Почему нам верят</span></div>
+    <h2 class="reveal" data-split>Спокойно за ребёнка. <span class="accent">Видно по результату</span></h2>
+    <div class="bento">
+      <div class="cell big reveal">
+        <span class="ic">🛡️</span>
+        <h3>Безопасность на виду</h3>
+        <p>Только проверенные педагоги. Занятие видно родителю. Мини-группы. У ИИ-лагеря — отдельный блок безопасности и никакого бесконтрольного доступа к инструментам. Никаких открытых токсичных серверов.</p>
+      </div>
+      <div class="cell stat reveal"><div class="n" data-count="6">0</div><p>языков с отдельными маршрутами</p></div>
+      <div class="cell stat reveal"><div class="n" data-count="50" data-suffix=" мин">0</div><p>урок: фокус без перегруза</p></div>
+      <div class="cell reveal"><span class="ic">🎓</span><h3>Носители и сертификаты</h3><p>TEFL/TESOL, 5+ лет онлайн-опыта, высокий EQ.</p></div>
+      <div class="cell reveal"><span class="ic">📊</span><h3>Отчёты родителю</h3><p>Прогресс видно, а не «верьте на слово».</p></div>
+      <div class="cell reveal"><span class="ic">🧩</span><h3>Именованные методы</h3><p>Action-first, TPR, ИИ-безопасность — не «просто игры».</p></div>
+      <div class="cell reveal"><span class="ic">🤝</span><h3>Инклюзия</h3><p>Комфортные уроки для детей с СДВГ, РАС, дислексией.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section light tmoji">
+  <div class="wrap"><div class="section-tag reveal"><span class="eyebrow">Отзывы родителей</span></div><h2 class="reveal" data-split>Что меняется <span class="accent">за лето</span></h2></div>
+  <div class="row">
+    <div class="t-track">
+      <div class="tcard"><div class="stars">★★★★★</div><p>«Мама, представляешь, я могу говорить на английском!» — фраза, ради которой всё.</p><div class="who">Ольга, сын 8 лет · PlaySend</div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p>Перестали воевать из-за Roblox — теперь это его занятие, а не залипание.</p><div class="who">Дмитрий, дочь 10 лет · PlaySend</div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p>За две недели сделал свой мультик и мини-игру. Сам. Я в шоке.</p><div class="who">Марина, сын 12 лет · AI Kids Lab</div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p>Готовились к переезду — ребёнок попал сразу в обычный класс, без ESL.</p><div class="who">Анна, дочь 7 лет · Bilingual</div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p>Наконец-то онлайн, который ребёнок ждёт, а не от которого устаёт.</p><div class="who">Сергей, сын 9 лет · Bilingual</div></div>
+      <!-- dup -->
+      <div class="tcard"><div class="stars">★★★★★</div><p>«Мама, представляешь, я могу говорить на английском!» — фраза, ради которой всё.</p><div class="who">Ольга, сын 8 лет · PlaySend</div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p>Перестали воевать из-за Roblox — теперь это его занятие, а не залипание.</p><div class="who">Дмитрий, дочь 10 лет · PlaySend</div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p>За две недели сделал свой мультик и мини-игру. Сам. Я в шоке.</p><div class="who">Марина, сын 12 лет · AI Kids Lab</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section light faq" id="faq">
+  <div class="wrap">
+    <div class="section-tag reveal"><span class="eyebrow">Честные ответы</span></div>
+    <h2 class="reveal" data-split>На то, о чём вы <span class="accent">уже подумали</span></h2>
+    <div class="acc" id="acc">
+      <div class="acc-item"><button class="acc-q">Это реальная учёба или просто игра?<span class="pm">+</span></button><div class="acc-a"><p>Игра и ИИ — инструмент, а под ними учебный план, уровень и отчёты. Прогресс видно с первого урока. Мы не развлекаем — мы учим через то, что ребёнок и так любит.</p></div></div>
+      <div class="acc-item"><button class="acc-q">Ребёнок не устанет от экрана?<span class="pm">+</span></button><div class="acc-a"><p>Уроки короткие — 30–50 минут, со сменой активности и движением (методика TPR). Никакого пассивного сидения и залипания.</p></div></div>
+      <div class="acc-item"><button class="acc-q">Это безопасно?<span class="pm">+</span></button><div class="acc-a"><p>Только проверенные педагоги, занятие видно родителю, мини-группы. В ИИ-лагере — отдельный блок безопасности и работа с инструментами только под присмотром. Никаких открытых серверов.</p></div></div>
+      <div class="acc-item"><button class="acc-q">А если мы уедем в отпуск?<span class="pm">+</span></button><div class="acc-a"><p>Есть заморозка занятий. Лето гибкое — подстроимся под ваши поездки.</p></div></div>
+      <div class="acc-item"><button class="acc-q">А вдруг ребёнку не подойдёт?<span class="pm">+</span></button><div class="acc-a"><p>Гарантия первого урока: если первое занятие не зажгло ребёнка — вернём деньги или перенесём без вопросов.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section dark final" id="final">
+  <div class="wrap">
+    <div>
+      <div class="section-tag reveal"><span class="eyebrow">Лето уже идёт</span></div>
+      <h2 class="reveal" data-split>Один урок решает, <span class="accent">каким будет это лето</span></h2>
+      <p class="lead reveal">Запишитесь на бесплатный урок — поймём задачу ребёнка и предложим маршрут.</p>
+      <div class="promo reveal">Промокод <b>POLINA</b> — −10% на первый пакет или смену</div>
+      <p class="urgency reveal">Early-bird цены AI Kids Lab — до старта смены. Спец-цены Bilingual — 3 дня после пробного.</p>
+    </div>
+    <form class="lead-form reveal" id="leadForm" novalidate>
+      <h3>Бесплатный урок</h3>
+      <p class="fm-sub">Сначала разбираемся в задаче ребёнка — потом предлагаем маршрут.</p>
+      <div class="field row2">
+        <div><label>Имя ребёнка</label><input name="name" placeholder="Например, Максим" required></div>
+        <div><label>Возраст</label><input name="age" type="number" min="3" max="17" placeholder="9" required></div>
+      </div>
+      <div class="field"><label>Telegram / WhatsApp или телефон</label><input name="contact" placeholder="@username или +7…" required></div>
+      <div class="field"><label>Интересует программа</label>
+        <select name="program">
+          <option value="">Помогите выбрать</option>
+          <option>Играй — английский в играх (PlaySend)</option>
+          <option>Создавай — ИИ-лагерь (AI Kids Lab)</option>
+          <option>Говори — билингвальная школа</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" type="submit" data-magnetic>Записать на бесплатный урок <span class="arr">→</span></button>
+      <p class="fm-micro">Бесплатно. Без карты. Без давления.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="#top"><img src="assets/brand/logo-light.svg" alt="Антишкола"></a>
+      <div class="cols">
+        <div class="fcol"><h4>Программы</h4><a href="#doors">Играй · PlaySend</a><a href="#doors">Создавай · AI Kids Lab</a><a href="#doors">Говори · Bilingual School</a></div>
+        <div class="fcol"><h4>Антишкола</h4><a href="#how">Как это работает</a><a href="#trust">Почему нам верят</a><a href="#faq">Вопросы</a></div>
+        <div class="fcol"><h4>Связь</h4><a href="#final">Бесплатный урок</a><a href="#">Telegram</a><a href="#">WhatsApp</a></div>
+      </div>
+    </div>
+    <div class="bot">
+      <span>© 2026 Антишкола · Лето для детей 4–16</span>
+      <span class="promo-mini">Промокод <b>POLINA</b> — −10% на первый пакет</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>gsap.registerPlugin(ScrollToPlugin);</script>
+<script src="js/main.js"></script>
+</body>
+</html>
