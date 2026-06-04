@@ -176,15 +176,16 @@
     // hero photo subtle parallax + scale
     const hp = $('.hero-photo img');
     if (hp) gsap.to(hp, { yPercent: 12, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
-    // door images clip reveal as they enter
-    $$('.door-card .visual img').forEach(img => {
-      gsap.fromTo(img, { clipPath: 'inset(0 0 100% 0)', scale: 1.15 },
+    // door media clip reveal as they enter
+    $$('.door-card .visual img, .door-card .visual video').forEach(m => {
+      gsap.fromTo(m, { clipPath: 'inset(0 0 100% 0)', scale: 1.12 },
         { clipPath: 'inset(0 0 0% 0)', scale: 1, duration: 1.1, ease: 'power3.out',
-          scrollTrigger: { trigger: img.closest('.door'), start: 'top 80%', once: true } });
+          scrollTrigger: { trigger: m.closest('.door'), start: 'top 80%', once: true } });
     });
-    // bridge / lead big lines fade-rise handled by reveal; add parallax to door visuals
+    // subtle parallax on door visuals
     $$('.door-card .visual').forEach(v => {
-      gsap.fromTo(v.querySelector('img'), { yPercent: -6 }, { yPercent: 6, ease: 'none',
+      const m = v.querySelector('img, video'); if (!m) return;
+      gsap.fromTo(m, { yPercent: -5 }, { yPercent: 5, ease: 'none',
         scrollTrigger: { trigger: v, start: 'top bottom', end: 'bottom top', scrub: true } });
     });
   }

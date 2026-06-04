@@ -103,9 +103,9 @@ h3,h4{font-family:"Manrope",sans-serif;font-weight:700;line-height:1.05;letter-s
 /* ---------- Hero (LIGHT, like real site) ---------- */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding-top:120px;padding-bottom:50px;overflow:hidden;background:var(--paper)}
 #hero-canvas{display:none}
-.hero-photo{position:absolute;top:0;right:0;bottom:0;width:42%;margin:0;z-index:1;overflow:hidden;border-left:1px solid var(--line)}
+.hero-photo{position:absolute;top:0;right:0;bottom:0;width:46%;margin:0;z-index:1;overflow:hidden}
 .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 28%}
-.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--paper) 0%,transparent 32%)}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--paper) 0%,var(--paper) 6%,transparent 42%)}
 .hero .wrap{position:relative;z-index:2;width:100%}
 .hero-eyebrow{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:26px}
 .chip{font-family:"Manrope";font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
@@ -165,12 +165,12 @@ h3,h4{font-family:"Manrope",sans-serif;font-weight:700;line-height:1.05;letter-s
 .doors-prog button.on{color:#0a0f12;background:var(--yellow);border-color:var(--yellow)}
 .pin-wrap{position:relative}
 .door-track{display:flex;width:300%}
-.door{width:100vw;max-width:100%;flex:0 0 33.333%;padding:10px 6px}
-.door-card{position:relative;overflow:hidden;border:1px solid var(--ink-line);min-height:560px;
+.door{width:100vw;max-width:100%;flex:0 0 33.333%;padding:10px 6px;display:flex}
+.door-card{position:relative;overflow:hidden;border:1px solid var(--ink-line);flex:1;min-height:600px;
   display:grid;grid-template-columns:1.04fr .96fr;background:var(--ink-2)}
 .door-card .meta{padding:clamp(28px,3.4vw,50px);display:flex;flex-direction:column;justify-content:space-between;position:relative;z-index:2}
 .door-card .visual{position:relative;overflow:hidden;background:var(--ink-3);border-left:1px solid var(--ink-line)}
-.door-card .visual img{width:100%;height:100%;object-fit:cover}
+.door-card .visual img,.door-card .visual video{width:100%;height:100%;object-fit:cover;display:block}
 .door-num{font-family:"Manrope";font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
 .door-kicker{font-family:"Manrope";font-weight:700;font-size:clamp(2.2rem,4vw,3.4rem);text-transform:uppercase;line-height:.92;margin:12px 0 6px;letter-spacing:-.02em;color:#fff}
 .door .tag{font-size:.92rem;color:#aeb6bf;font-weight:600}
