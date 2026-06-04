@@ -285,7 +285,7 @@ h3,h4{font-family:"Manrope",sans-serif;font-weight:700;line-height:1.05;letter-s
   .bento{grid-template-columns:repeat(2,1fr)}
   .cell.big{grid-column:span 2}
 }
-@media(max-width:860px){
+@media(max-width:1040px){
   .nav{display:none}
   .burger{display:flex}
   .pain-grid,.principles,.steps{grid-template-columns:1fr;border-right:1px solid}
