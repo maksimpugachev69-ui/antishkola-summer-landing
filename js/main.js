@@ -8,7 +8,8 @@
   /* ---------- Lenis smooth scroll (weighted, premium) ---------- */
   let lenis = null;
   function smoothScroll() {
-    if (RM || typeof Lenis === 'undefined') return;
+    // On touch devices use native scroll so ScrollTrigger updates reliably (Lenis doesn't drive touch scroll)
+    if (RM || typeof Lenis === 'undefined' || matchMedia('(pointer:coarse)').matches) return;
     lenis = new Lenis({ duration: 1.15, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true, wheelMultiplier: 0.95 });
     lenis.on('scroll', ScrollTrigger.update);
     gsap.ticker.add(t => lenis.raf(t * 1000));

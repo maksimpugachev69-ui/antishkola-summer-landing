@@ -294,8 +294,23 @@ h3,h4{font-family:"Manrope",sans-serif;font-weight:700;line-height:1.05;letter-s
   .final .wrap{grid-template-columns:1fr;gap:36px}
   .door-track{flex-direction:column;width:100%}
   .door{flex-basis:auto;width:100%;margin-bottom:16px}
-  .hero-photo{width:100%;opacity:.16;border-left:none}
-  .hero-photo::after{background:linear-gradient(180deg,var(--paper),transparent 55%,var(--paper))}
+}
+/* Tablet: photo as a narrower right strip, stronger fade so text stays readable */
+@media(min-width:769px) and (max-width:1040px){
+  .hero-photo{width:32%}
+  .hero-photo::after{background:linear-gradient(90deg,var(--paper) 0%,var(--paper) 18%,rgba(255,255,255,.55) 48%,transparent 78%)}
+  .hero h1{font-size:clamp(2.8rem,7.5vw,5.4rem)}
+}
+/* Mobile: clear visible photo block on top, then text */
+@media(max-width:768px){
+  .hero{flex-direction:column;justify-content:flex-start;align-items:stretch;min-height:auto;padding-top:84px;padding-bottom:44px}
+  .hero-photo{position:relative;order:-1;width:100%;height:36vh;min-height:230px;opacity:1;border-left:none;border-bottom:1px solid var(--line);margin-bottom:30px}
+  .hero-photo img{object-position:center 26%}
+  .hero-photo::after{background:linear-gradient(180deg,transparent 55%,rgba(255,255,255,.65) 88%,var(--paper))}
+  .hero .wrap{order:1}
+  .hero h1{font-size:clamp(2.4rem,11vw,3.6rem)}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{justify-content:center}
 }
 @media(max-width:520px){
   .bento{grid-template-columns:1fr}
